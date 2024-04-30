@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.51\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"8316dcab562f32f7dfdf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":98.26847216775474,\"y\":39.68534452928557,\"z\":0,\"width\":952.4482687028536,\"height\":680.3201919306098,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Sales.OrderDate.Variation.Date Hierarchy.Year\",\"active\":true},{\"queryRef\":\"Sales.OrderDate.Variation.Date Hierarchy.Quarter\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Sales.SalesAmount)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"Sales\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"OrderDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"},\"Name\":\"Sales.OrderDate.Variation.Date Hierarchy.Year\",\"NativeReferenceName\":\"OrderDate Year\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"OrderDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Quarter\"},\"Name\":\"Sales.OrderDate.Variation.Date Hierarchy.Quarter\",\"NativeReferenceName\":\"OrderDate Quarter\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesAmount\"}},\"Function\":0},\"Name\":\"Sum(Sales.SalesAmount)\",\"NativeReferenceName\":\"Sum of SalesAmount\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"referenceLine\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Min'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(Sales.SalesAmount)\"}},\"Function\":3}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":6,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"29D\"}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'solid'\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'front'\"}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelHorizontalPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'right'\"}}},\"dataLabelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"Sum(Sales.SalesAmount)\",\"id\":\"1\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Max'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(Sales.SalesAmount)\"}},\"Function\":4}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#57D900'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelHorizontalPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"dataLabelVerticalPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'under'\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"Sum(Sales.SalesAmount)\",\"id\":\"2\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Average'\"}}},\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"SelectRef\":{\"ExpressionName\":\"Sum(Sales.SalesAmount)\"}},\"Function\":1}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#00D5D9'\"}}}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'dotted'\"}}},\"dataLabelShow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"dataLabelText\":{\"expr\":{\"Literal\":{\"Value\":\"'ValueAndName'\"}}}},\"selector\":{\"metadata\":\"Sum(Sales.SalesAmount)\",\"id\":\"3\"}}]}}}",
+          "filters": "[{\"name\":\"Filter786b3ad3caf247f6a032\",\"expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Sales\"}},\"Name\":\"Variation\",\"Property\":\"OrderDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 680.32,
+          "width": 952.45,
+          "x": 98.27,
+          "y": 39.69,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
